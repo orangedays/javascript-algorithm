@@ -14,9 +14,13 @@ function partition(arr, left, right) {
   for (let j =left + 1; j <= right; j++) {
     if (arr[j] < v) {
       i++;
-      util.swap(arr, arr[i], arr[j]);
+      util.swap(arr, i, j);
     }
   }
-  util.swap(arr, arr[left], arr[i]);
+  util.swap(arr, left, i);
   return i;
 }
+
+let arr = [7, 6, 7, 8, 9, 0]
+quickSort(arr, 0, 5);
+console.log(arr);
