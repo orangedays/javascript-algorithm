@@ -6,9 +6,9 @@
 const reverse = function(x) {
   const str = x
     .toString()
-    .split("")
+    .split('')
     .reverse()
-    .join("");
+    .join('');
   let reversed = Math.sign(x) * parseInt(str);
   if (reversed < Math.pow(-2, 31) || reversed > Math.pow(2, 31) - 1) {
     reversed = 0;
