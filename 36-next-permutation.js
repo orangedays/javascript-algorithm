@@ -1,4 +1,7 @@
+// https://leetcode-cn.com/problems/next-permutation
 /**
+ * time: O(n);
+ * space: O(1);
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
